@@ -1,4 +1,4 @@
-FILEPATH = "todos.txt"
+FILEPATH = "/Users/jd/Documents/Python/TODO APP/todos.txt"
 
 def get_todos(filepath=FILEPATH):
     """Read a text file and return the 
