@@ -6,11 +6,13 @@ sg.theme('BlueMono')
 clock = sg.Text('', key='clock')
 label = sg.Text("Type in a To-Do")                   
 input_box = sg.InputText(tooltip="Enter TODO", key = "todo")
-add_button = sg.Button("Add")
+add_button = sg.Button(size=10, image_source='/Users/jd/Documents/Python/TODO APP/add.png',
+                       tooltip='Add todo', key='Add')
 list_box = sg.Listbox(values=functions.get_todos(), key='todos',
                       enable_events=True, size=[45, 10])
 edit_button = sg.Button("Edit")
-remove_button = sg.Button("Remove")
+remove_button = sg.Button(size=10, image_source='/Users/jd/Documents/Python/TODO APP/complete.png',\
+                          tooltip='Removes the completed todo', key='Remove')
 exit_button = sg.Button("Exit")
 
 window = sg.Window("My TO-DO App",  
