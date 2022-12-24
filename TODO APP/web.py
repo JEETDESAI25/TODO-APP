@@ -17,7 +17,7 @@ st.write("Here are your Todo's.")
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
-    if checkbox:
+    if checkbox is True:
         todos.pop(index)
         functions.write_todos(todos)
         del st.session_state[todo]
